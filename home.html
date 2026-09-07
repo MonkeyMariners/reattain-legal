@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FocusLock — Lock the distractions</title>
+<meta name="description" content="FocusLock locks the apps that pull you away for as long as you choose. Want out early? You earn it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+<style>
+  .lead{max-width:52rem; margin:0 auto; padding:0 1.3rem 1rem;}
+  .lead .tag{display:inline-flex; align-items:center; gap:.5rem; font-family:"Sora",sans-serif;
+    font-size:.78rem; letter-spacing:.03em; color:var(--blue-2); border:1px solid var(--line-2);
+    background:var(--bg-soft); border-radius:999px; padding:.35rem .8rem; margin-bottom:1rem;}
+  .lead .tag b{color:var(--orange-2);}
+  .lede{font-size:1.18rem; color:var(--ink); max-width:60ch;}
+  .lede strong{color:var(--white);}
+
+  .grid{max-width:52rem; margin:2.4rem auto 0; padding:0 1.3rem; display:grid; gap:1rem;
+    grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));}
+  .feat{border:1px solid var(--line-2); border-radius:16px; padding:1.4rem;
+    background:linear-gradient(180deg,var(--bg-soft),rgba(12,19,34,.35)); transition:transform .18s, border-color .18s, box-shadow .18s;}
+  .feat:hover{transform:translateY(-3px); border-color:var(--blue); box-shadow:0 16px 32px rgba(61,139,255,.16);}
+  .feat .ic{width:2.6rem; height:2.6rem; display:grid; place-items:center; border-radius:12px; font-size:1.3rem;
+    background:linear-gradient(135deg,rgba(61,139,255,.22),rgba(255,145,48,.18)); margin-bottom:.9rem;}
+  .feat h3{font-family:"Sora",sans-serif; font-weight:600; font-size:1.08rem; color:var(--white); margin:0 0 .4rem;}
+  .feat p{margin:0; color:var(--ink-2); font-size:.94rem;}
+
+  .band{max-width:52rem; margin:2.6rem auto 0; padding:1.6rem 1.4rem; border-radius:18px;
+    border:1px solid var(--line-2); border-left:3px solid var(--orange);
+    background:linear-gradient(180deg,rgba(255,145,48,.06),rgba(255,145,48,.01));}
+  .band h2{font-family:"Sora",sans-serif; color:var(--white); font-size:1.25rem; margin:0 0 .6rem;}
+  .band ul{margin:0; padding-left:1.2rem; color:var(--ink-2);}
+  .band li{margin:.35rem 0;}
+  .steps{max-width:52rem; margin:2.4rem auto 0; padding:0 1.3rem; display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(13rem,1fr)); counter-reset:s;}
+  .step{position:relative; padding-left:2.6rem;}
+  .step::before{counter-increment:s; content:counter(s); position:absolute; left:0; top:0; width:1.9rem; height:1.9rem;
+    display:grid; place-items:center; border-radius:8px; font-family:"Sora",sans-serif; font-weight:700; color:#08101f;
+    background:linear-gradient(135deg,var(--blue),var(--orange));}
+  .step h3{font-family:"Sora",sans-serif; font-size:1rem; color:var(--white); margin:.1rem 0 .3rem;}
+  .step p{margin:0; color:var(--ink-2); font-size:.92rem;}
+  .sec-title{max-width:52rem; margin:2.8rem auto .2rem; padding:0 1.3rem; font-family:"Sora",sans-serif;
+    font-weight:700; color:var(--white); font-size:1.5rem;}
+</style>
+</head>
+<body>
+<div class="bg-accents" aria-hidden="true"></div>
+
+<header class="hero">
+  <a class="brand" href="home.html"><span class="dot"></span> FocusLock</a>
+  <p class="eyebrow">Focus · Android</p>
+  <h1>Lock the distractions.<br>Do the work.</h1>
+</header>
+
+<div class="lead">
+  <div class="tag">Free · <b>No ads</b> · Private by design</div>
+  <p class="lede"><strong>You pick something to do and how long to do it for.</strong> For that time, the
+  apps you chose stay shut. If you want out early, you don't just tap "quit" — you earn it by finishing
+  a small challenge. Simple, honest, and surprisingly hard to argue your way past.</p>
+</div>
+
+<h2 class="sec-title">What you can do</h2>
+<div class="grid">
+  <div class="feat"><div class="ic">🔒</div><h3>Lock any app</h3><p>Choose the apps that pull you away — Instagram, YouTube, games — and they stay locked for the whole session.</p></div>
+  <div class="feat"><div class="ic">⏳</div><h3>Set a focus session</h3><p>Pick a purpose and a length. A clean timer counts you down; the session can't be shortened once it starts.</p></div>
+  <div class="feat"><div class="ic">🧠</div><h3>Earn your early exit</h3><p>Leaving early takes a real effort — mental maths, a short reading passage, or a set of exercises counted by the camera.</p></div>
+  <div class="feat"><div class="ic">🔥</div><h3>Build a streak</h3><p>Every focused day counts. A discipline score and streak turn one good session into a habit.</p></div>
+  <div class="feat"><div class="ic">🎛️</div><h3>Lock profiles</h3><p>Save your setups — Deep Work, Study, Power Nap — and start the right one in a tap.</p></div>
+  <div class="feat"><div class="ic">🆘</div><h3>Emergency always on</h3><p>Emergency calls and the flashlight stay reachable through the whole session, and never end it.</p></div>
+</div>
+
+<h2 class="sec-title">How it works</h2>
+<div class="steps">
+  <div class="step"><h3>Pick &amp; block</h3><p>Choose what to do, how long, and which apps to lock.</p></div>
+  <div class="step"><h3>Focus</h3><p>The apps stay shut. Open one and a calm block screen reminds you to stay with it.</p></div>
+  <div class="step"><h3>Finish or earn out</h3><p>See it through — or pass a challenge if you truly need to leave early.</p></div>
+</div>
+
+<div class="band">
+  <h2>Private by design</h2>
+  <ul>
+    <li>Runs on your phone. Your sessions and stats live on the device, not on a server.</li>
+    <li>No ads, and nothing sold to advertisers or data brokers.</li>
+    <li>It never reads your screens or messages, never tracks your location, and never stops you uninstalling it.</li>
+    <li>The optional app lock reads only <em>which</em> app is in front — never anything inside it.</li>
+  </ul>
+</div>
+
+<nav class="doc-nav" aria-label="Site pages">
+  <a href="home.html" class="active">Home</a>
+  <a href="privacy-policy.html">Privacy</a>
+  <a href="terms-of-use.html">Terms of Use</a>
+  <a href="refund-policy.html">Refund</a>
+  <a href="cookie-policy.html">Cookies</a>
+</nav>
+
+<footer class="foot">
+  <div class="power">Powered by <strong>Monkey Mariners</strong></div>
+  <div>© 2026 FocusLock · Patna, India · <a href="mailto:focuslock@gmail.com">focuslock@gmail.com</a></div>
+</footer>
+</body>
+</html>

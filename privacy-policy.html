@@ -4,39 +4,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>FocusLock — Privacy Policy</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
-    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    color: #16181c; background: #fff;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { color: #e7e9ea; background: #0d0f12; }
-    a { color: #f0b429; }
-    th { background: #16181c; }
-    td, th { border-color: #2a2d33; }
-  }
-  h1 { font-size: 1.8rem; margin: 0 0 .25rem; }
-  h2 { font-size: 1.25rem; margin: 2.2rem 0 .6rem; }
-  .sub { color: #6a6f76; margin: 0 0 2rem; }
-  a { color: #b7791f; }
-  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
-  td, th { border: 1px solid #d7dae0; padding: .5rem .7rem; text-align: left; vertical-align: top; font-size: .95rem; }
-  th { background: #f5f6f8; }
-  ul { padding-left: 1.25rem; }
-  li { margin: .3rem 0; }
-  .never li::marker { content: "\2715  "; }
-  .box { border: 1px solid #d7dae0; border-radius: 8px; padding: .5rem 1rem; margin: 1.5rem 0; }
-  @media (prefers-color-scheme: dark) { .box { border-color: #2a2d33; } }
-  code { background: rgba(128,128,128,.15); padding: .1rem .3rem; border-radius: 4px; }
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="bg-accents" aria-hidden="true"></div>
 
-<h1>FocusLock — Privacy Policy</h1>
-<p class="sub">Last updated: 7 September 2026</p>
+<header class="hero">
+  <a class="brand" href="index.html"><span class="dot"></span> FocusLock</a>
+  <p class="eyebrow">Legal · Privacy</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated · 7 September 2026</p>
+</header>
 
+<main class="doc">
 <p>FocusLock helps you lock away distracting apps for a focus session you set yourself,
 and earn an early exit by completing a challenge. This policy explains, in plain terms,
 what the app does and does not do with your information. It is written to match how the
@@ -74,6 +59,7 @@ that is yours alone.</p>
 </ul>
 
 <p>What is copied to your private account:</p>
+<div class="tbl-wrap">
 <table>
   <tr><th>Backed up</th><th>Explicitly not backed up</th></tr>
   <tr>
@@ -88,6 +74,7 @@ that is yours alone.</p>
     </td>
   </tr>
 </table>
+</div>
 
 <p>Firebase processes this data on Google's infrastructure as our data processor. See
 Google's privacy policy at
@@ -124,6 +111,7 @@ background apps. When it is on:</p>
 <h2>Permissions, and why each is asked for</h2>
 <p>The app asks for powerful permissions, and each one is used only for the purpose below.
 A session runs without any of them; each only widens what a session can enforce.</p>
+<div class="tbl-wrap">
 <table>
   <tr><th>Permission</th><th>Used for</th></tr>
   <tr><td>Accessibility Service (the app lock)</td><td>Optional, and turned on by you. To know which app has come to the front so a blocked one can be locked during a session. It reads only which app is in front — never any screen content — and nothing it sees leaves the device. See the section above.</td></tr>
@@ -135,6 +123,7 @@ A session runs without any of them; each only widens what a session can enforce.
   <tr><td>Notifications</td><td>To show the running session and the time left, with emergency access one tap away.</td></tr>
   <tr><td>Run foreground service / start on boot</td><td>To keep a session's timer accurate and restore an unfinished session after a restart.</td></tr>
 </table>
+</div>
 
 <h2>What this app never does</h2>
 <ul class="never">
@@ -161,6 +150,19 @@ note it in the app. Continued use after a change means you accept the updated po
 
 <h2>Contact</h2>
 <p>Questions or requests about your privacy: <strong>focuslock@gmail.com</strong>.</p>
+</main>
 
+<nav class="doc-nav" aria-label="Legal pages">
+  <a href="home.html">Home</a>
+  <a href="privacy-policy.html" class="active">Privacy</a>
+  <a href="terms-of-use.html">Terms of Use</a>
+  <a href="refund-policy.html">Refund</a>
+  <a href="cookie-policy.html">Cookies</a>
+</nav>
+
+<footer class="foot">
+  <div class="power">Powered by <strong>Monkey Mariners</strong></div>
+  <div>© 2026 FocusLock · Patna, India · <a href="mailto:focuslock@gmail.com">focuslock@gmail.com</a></div>
+</footer>
 </body>
 </html>
