@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FocusLock — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #16181c; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e7e9ea; background: #0d0f12; }
+    a { color: #f0b429; }
+    th { background: #16181c; }
+    td, th { border-color: #2a2d33; }
+  }
+  h1 { font-size: 1.8rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.25rem; margin: 2.2rem 0 .6rem; }
+  .sub { color: #6a6f76; margin: 0 0 2rem; }
+  a { color: #b7791f; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  td, th { border: 1px solid #d7dae0; padding: .5rem .7rem; text-align: left; vertical-align: top; font-size: .95rem; }
+  th { background: #f5f6f8; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .3rem 0; }
+  .never li::marker { content: "\2715  "; }
+  .box { border: 1px solid #d7dae0; border-radius: 8px; padding: .5rem 1rem; margin: 1.5rem 0; }
+  @media (prefers-color-scheme: dark) { .box { border-color: #2a2d33; } }
+  code { background: rgba(128,128,128,.15); padding: .1rem .3rem; border-radius: 4px; }
+</style>
+</head>
+<body>
+
+<h1>FocusLock — Privacy Policy</h1>
+<p class="sub">Last updated: 7 September 2026</p>
+
+<p>FocusLock helps you lock away distracting apps for a focus session you set yourself,
+and earn an early exit by completing a challenge. This policy explains, in plain terms,
+what the app does and does not do with your information. It is written to match how the
+app actually behaves, not to cover things it does not do.</p>
+
+<div class="box">
+<p><strong>The short version.</strong> FocusLock runs on your phone. Your sessions, challenge
+results and daily totals are stored on the device. If cloud backup is enabled, only counts and
+outcomes are copied to your private account so you can restore your history on a new phone —
+never the apps you block, the answers you give, your contacts, or anything the camera sees.</p>
+</div>
+
+<h2>Who we are</h2>
+<p>This app is published by <strong>Monkey Mariners</strong> ("we", "us"), based in Patna, Bihar,
+India. For any privacy question or request, contact us at <strong>focuslock@gmail.com</strong>, or by
+post at: Monkey Mariners, Vill. Sukar Beg Chak, P.O. &amp; P.S. Khusrupur, Patna, Bihar 803202, India.</p>
+
+<h2>What stays on your device</h2>
+<p>The app's own database lives on your phone and is the source of truth. It holds your
+sessions, your challenge attempts, your emergency contacts, your lock profiles and your daily
+statistics. This information is not sent anywhere except as described under "Cloud backup" below.</p>
+
+<h2>Cloud backup (optional, Firebase)</h2>
+<p>So your progress survives a lost or replaced phone, the app can back up a <em>limited</em>
+copy of your history to Google Firebase (Authentication and Cloud Firestore) under an account
+that is yours alone.</p>
+
+<ul>
+  <li><strong>Your account is anonymous.</strong> On first launch the app signs in with Firebase
+  Anonymous Authentication. This creates a random identifier. We do not ask for your name, email
+  or phone number, and none is attached to your data.</li>
+  <li><strong>Only you can read your data.</strong> Security rules restrict every document to the
+  account that created it. No user can read another user's data, and neither can we use it to
+  identify you.</li>
+</ul>
+
+<p>What is copied to your private account:</p>
+<table>
+  <tr><th>Backed up</th><th>Explicitly not backed up</th></tr>
+  <tr>
+    <td>
+      Session length, purpose, status and time; challenge type, difficulty, score and pass/fail;
+      daily focus totals, streaks and XP; the <em>number</em> of apps a session blocked.
+    </td>
+    <td>
+      The list of which apps you block; the text of any reading passage or question; the answers
+      you gave; anything the camera sees; exercise rep-timing samples; your emergency contacts'
+      names or numbers.
+    </td>
+  </tr>
+</table>
+
+<p>Firebase processes this data on Google's infrastructure as our data processor. See
+Google's privacy policy at
+<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+
+<h2>Crash reports and analytics</h2>
+<p>The app uses Firebase Crashlytics and Analytics to understand crashes and general usage
+(for example, how many sessions are completed), so we can fix problems and improve the app.
+These reports are aggregated and are not tied to your name or identity. They never include the
+contents of your sessions, your challenge answers, your contacts, or camera data.</p>
+
+<h2>The app lock (Accessibility Service)</h2>
+<div class="box">
+<p><strong>FocusLock uses Android's Accessibility Service for one purpose only: to know
+which app has just come to the front, so that an app you chose to block can be locked
+during a focus session.</strong></p>
+</div>
+<p>This is an optional feature you turn on yourself, in your phone's Accessibility settings.
+It is the strongest way to make blocking work reliably, including on phones that stop
+background apps. When it is on:</p>
+<ul>
+  <li>It reads <strong>only which application is currently in the foreground</strong> — the app's
+  package name. That is all it is technically able to receive: it is configured so it
+  <strong>cannot retrieve window content</strong>.</li>
+  <li>It <strong>never reads</strong> the contents of any screen, text field, message, password,
+  or keystroke, in FocusLock or in any other app.</li>
+  <li>The information it uses stays <strong>on your device</strong>. Nothing the Accessibility
+  Service observes is ever stored beyond the moment it is used, and nothing is transmitted off
+  the device.</li>
+  <li>It acts only while a focus session you started is running, and only on the apps you chose
+  to block. You can turn it off at any time in Accessibility settings.</li>
+</ul>
+
+<h2>Permissions, and why each is asked for</h2>
+<p>The app asks for powerful permissions, and each one is used only for the purpose below.
+A session runs without any of them; each only widens what a session can enforce.</p>
+<table>
+  <tr><th>Permission</th><th>Used for</th></tr>
+  <tr><td>Accessibility Service (the app lock)</td><td>Optional, and turned on by you. To know which app has come to the front so a blocked one can be locked during a session. It reads only which app is in front — never any screen content — and nothing it sees leaves the device. See the section above.</td></tr>
+  <tr><td>Usage access</td><td>An alternative to the app lock: to notice which app has just come to the foreground, so a blocked one can be covered. It reads only which app is in front. It cannot see inside any app, and this information is not stored or transmitted.</td></tr>
+  <tr><td>Display over other apps</td><td>To draw the focus screen over an app you chose to block, only during a session.</td></tr>
+  <tr><td>Do Not Disturb access</td><td>To silence interruptions for the length of a session and then restore your previous setting. Alarms and repeat callers always get through.</td></tr>
+  <tr><td>Camera</td><td>To count exercise repetitions on the device during an exercise challenge. Frames are processed in memory and immediately discarded — never saved to storage and never uploaded.</td></tr>
+  <tr><td>Phone (make calls)</td><td>To dial a saved emergency contact in one tap from the emergency screen. Public emergency numbers open your dialer rather than being dialled for you.</td></tr>
+  <tr><td>Notifications</td><td>To show the running session and the time left, with emergency access one tap away.</td></tr>
+  <tr><td>Run foreground service / start on boot</td><td>To keep a session's timer accurate and restore an unfinished session after a restart.</td></tr>
+</table>
+
+<h2>What this app never does</h2>
+<ul class="never">
+  <li>Read your messages, or the contents of your notifications.</li>
+  <li>Record or upload anything the camera sees.</li>
+  <li>Track your location.</li>
+  <li>Send your app-usage details to us or anyone else.</li>
+  <li>Prevent you from uninstalling it.</li>
+  <li>Sell or share your data with advertisers or data brokers.</li>
+</ul>
+
+<h2>Keeping and deleting your data</h2>
+<p>Data on your device is removed when you uninstall the app or clear its storage. Backed-up
+data is kept in your anonymous account so your history can be restored. To have your
+backed-up data deleted, contact us at <strong>focuslock@gmail.com</strong> and we will remove it.</p>
+
+<h2>Children</h2>
+<p>FocusLock is not directed to children under 13, and we do not knowingly collect personal
+information from them.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, we will update the date at the top and, for significant changes,
+note it in the app. Continued use after a change means you accept the updated policy.</p>
+
+<h2>Contact</h2>
+<p>Questions or requests about your privacy: <strong>focuslock@gmail.com</strong>.</p>
+
+</body>
+</html>
