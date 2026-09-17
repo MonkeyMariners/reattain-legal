@@ -101,14 +101,18 @@ background apps. When it is on:</p>
   <strong>cannot retrieve window content</strong>.</li>
   <li>It <strong>never reads</strong> the contents of any screen, text field, message, password,
   or keystroke, in REATTAIN or in any other app.</li>
-  <li>The information it uses stays <strong>on your device</strong>. Nothing the Accessibility
-  Service observes is ever stored beyond the moment it is used, and nothing is transmitted off
-  the device.</li>
-  <li>It acts only while a focus session you started is running: on the apps you chose to block,
-  and &mdash; if you switch on the optional <strong>Uninstall protection</strong> &mdash; to send you back to your
-  home screen if the system app-uninstaller opens during a session, so the app cannot be removed
-  until the session ends. Even then it reads only which app is in front, never what is on the
-  screen. You can turn it off at any time in Accessibility settings.</li>
+  <li>The information it uses stays <strong>on your device</strong>. Apart from a private, on-device
+  count of short-video swipes described below, nothing it observes is stored beyond the moment it is
+  used, and nothing is ever transmitted off the device.</li>
+  <li>During a focus session it acts on the apps you chose to block, and &mdash; if you switch on the
+  optional <strong>Uninstall protection</strong> &mdash; sends you back to your home screen if the system
+  app-uninstaller opens, so the app cannot be removed until the session ends. Even then it reads only
+  which app is in front, never what is on the screen. You can turn it off at any time in Accessibility settings.</li>
+  <li><strong>Reels &amp; Shorts counter.</strong> Outside a session, the service keeps a private count of
+  how often you swipe through short-video feeds (such as Instagram Reels, YouTube Shorts and TikTok). It
+  reads only the app's package name and the fact that a scroll happened &mdash; never any screen content
+  &mdash; and the running count stays on your device to power the in-app &ldquo;Reels &amp; Shorts&rdquo;
+  usage view. It is not transmitted anywhere.</li>
 </ul>
 
 <h2>Permissions, and why each is asked for</h2>
