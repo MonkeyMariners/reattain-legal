@@ -1,238 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>REATTAIN — Privacy Policy</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap">
-<link rel="icon" type="image/png" href="favicon.png">
-<link rel="apple-touch-icon" href="favicon.png">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="bg-accents" aria-hidden="true"></div>
-
-<header class="hero">
-  <a class="brand" href="index.html"><span class="dot"></span> REATTAIN</a>
-  <p class="eyebrow">Legal · Privacy</p>
-  <h1>Privacy Policy</h1>
-  <p class="updated">Last updated · 20 September 2026</p>
-</header>
-
-<main class="doc">
-<p>REATTAIN counts the short videos you scroll past, lets you block distracting apps and
-websites for a focus session you set yourself, and makes you earn an early exit by completing
-a challenge. This policy explains, in plain terms, what the app does and does not do with your
-information. It is written to match how the app actually behaves.</p>
-
-<div class="box">
-<p><strong>The short version.</strong> REATTAIN runs on your phone. Your sessions, reel counts,
-challenge results and daily totals are stored on the device. To make blocking and counting work,
-the app reads <em>small, specific parts of what is on screen</em> — which app is in front, whether
-a feed scrolled, the address in your browser's address bar, and the channel name on a YouTube
-watch page. None of that is stored or sent anywhere. If you turn on cloud backup, only counts and
-outcomes are copied to your private account. If you turn on friends, a short profile becomes
-visible to people you add.</p>
-</div>
-
-<h2>Who we are</h2>
-<p>This app is published by <strong>Monkey Mariners</strong> ("we", "us"), based in Patna, Bihar,
-India. For any privacy question or request, contact us at <strong>monkeymariners@gmail.com</strong>, or by
-post at: Monkey Mariners, Vill. Sukar Beg Chak, P.O. &amp; P.S. Khusrupur, Patna, Bihar 803202, India.</p>
-
-<h2>What stays on your device</h2>
-<p>The app's own database lives on your phone and is the source of truth. It holds your sessions,
-your challenge attempts, your reel and short-video counts, your emergency contacts, your lock
-profiles, your blocked websites, your allowed YouTube channels and your daily statistics. This
-information is not sent anywhere except as described under "Cloud backup" and "Friends and focus
-rooms" below.</p>
-
-<h2 id="accessibility">The Accessibility Service — what it reads, and why</h2>
-<div class="box">
-<p><strong>REATTAIN uses Android's Accessibility Service to block apps, block websites and count
-short videos. This use is not related to assisting users with disabilities.</strong> It is optional,
-you turn it on yourself in your phone's Accessibility settings, and you can turn it off at any time.</p>
-</div>
-
-<p>This is the most powerful permission Android grants, so here is precisely what the app does with
-it. The service is configured to be able to read window content, because three of the features below
-are impossible without it.</p>
-
-<h3>What it reads</h3>
-<ul>
-  <li><strong>Which app is in the foreground</strong> — the package name. This is how a blocked app is
-  noticed during a session.</li>
-  <li><strong>That a feed scrolled, and by how much</strong> — a number, not content. This is how a reel
-  swipe is counted on Instagram, TikTok, Facebook and X.</li>
-  <li><strong>On YouTube and Snapchat, the text visible on the current short video</strong> — the
-  creator's @handle and the caption. These apps report no usable scroll, so the only way to tell one
-  short from the next is to read what identifies the one on screen. That text is immediately converted
-  into a single number (a fingerprint) and discarded. The text itself is never stored, never logged and
-  never leaves the device. Only the number is compared, and only to the previous number.</li>
-  <li><strong>On YouTube, the channel name on a watch page</strong> — only when you have switched on
-  Study Mode, and only to check it against the list of channels you allowed.</li>
-  <li><strong>In your browser, the address shown in the address bar</strong> — only when you have added
-  blocked websites or switched on the adult-site filter. The app keeps only the host (for example
-  <code>example.com</code>); the rest of the address — the page, the path, anything you searched for — is
-  discarded before any comparison is made, so the app never holds the part of a web address that
-  identifies a page.</li>
-</ul>
-
-<h3>What it never reads</h3>
-<ul class="never">
-  <li>Your messages, in any app.</li>
-  <li>Passwords, PINs, or anything you type.</li>
-  <li>The contents of your notifications.</li>
-  <li>Photos, files, or anything on screen beyond the specific items listed above.</li>
-</ul>
-
-<h3>What happens to it</h3>
-<p>Nothing the service reads is stored, logged, or transmitted. The only things that outlive the
-moment are numbers: a count of reels per app per day, and the counts behind your daily statistics.
-Those stay on your device unless you switch on cloud backup or friends.</p>
-
-<h2>Uninstall protection (optional, off by default)</h2>
-<p>If you switch this on, then <em>during a focus session</em> or <em>while your daily reel limit is
-spent</em>, the app sends you back to your home screen if the system uninstaller, an app store's page
-for REATTAIN, or the Settings "App info" screen for REATTAIN comes to the front. This reads only the
-name of the window in front — never its contents — and acts only on those screens. It never blocks
-Settings generally, it is never active outside those two situations, and a session always ends on its
-own. It is a deterrent against an impulse, not a lock: you can turn it off, uninstall in safe mode, or
-simply switch the Accessibility Service off.</p>
-
-<h2>Screen time</h2>
-<p>If you grant usage access, the app shows you per-app screen time. These figures come from
-Android's own records through <code>UsageStatsManager</code> — Android has already measured them; the
-app only reads them, on demand, for a screen you opened. They are not stored by the app and are never
-transmitted.</p>
-
-<h2>Cloud backup (optional, Firebase)</h2>
-<p>So your progress survives a lost or replaced phone, the app can back up a <em>limited</em> copy of
-your history to Google Firebase (Authentication and Cloud Firestore) under an account that is yours
-alone.</p>
-
-<ul>
-  <li><strong>You start anonymous.</strong> On first launch the app signs in with Firebase Anonymous
-  Authentication, which creates a random identifier with no name, email or phone number attached.</li>
-  <li><strong>You can sign in with Google</strong> to keep your history across devices. If you do, your
-  Google account's name and email address become associated with your data, and your existing anonymous
-  history is linked to that account rather than abandoned.</li>
-  <li><strong>Only you can read your data.</strong> Security rules restrict every document to the
-  account that created it.</li>
-</ul>
-
-<p>What is copied to your private account:</p>
-<div class="tbl-wrap">
-<table>
-  <tr><th>Backed up</th><th>Explicitly not backed up</th></tr>
-  <tr>
-    <td>
-      Session length, purpose, status and time; challenge type, difficulty, score and pass/fail;
-      daily focus totals, streaks and XP; the <em>number</em> of apps a session blocked.
-    </td>
-    <td>
-      The list of which apps you block; your blocked websites; your allowed YouTube channels; your
-      reel counts; your screen-time figures; the text of any reading passage or question; the answers
-      you gave; anything the camera sees; exercise rep-timing samples; your emergency contacts' names
-      or numbers.
-    </td>
-  </tr>
-</table>
-</div>
-
-<p>Firebase processes this data on Google's infrastructure as our data processor. See Google's privacy
-policy at <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
-
-<h2>Friends and focus rooms (optional, off by default)</h2>
-<p>These are the only features where another person can see anything about you, and nothing happens
-until you choose to publish. They require signing in with Google, because an anonymous identity
-disappears when the app is reinstalled.</p>
-
-<ul>
-  <li><strong>What becomes visible:</strong> your display name, your chosen avatar, today's total reel
-  count, and your current focus streak. Nothing else.</li>
-  <li><strong>What never becomes visible:</strong> your session history, which apps you block, your
-  per-app breakdown, your screen time, your blocked websites, your challenge answers, or anything else
-  in the app.</li>
-  <li><strong>Who can see it:</strong> people you add as friends, and — while you are in a focus room —
-  the other people in that room, who see your first name, avatar and minutes focused.</li>
-  <li><strong>Turning it off:</strong> removing your profile from the Friends screen deletes it, and
-  everything stops. Leaving a room removes you from it.</li>
-</ul>
-
-<h2>Sound and speech</h2>
-<p>Focus sounds are generated on your device or played from files included in the app. Nothing is
-streamed and nothing is recorded — the microphone is never used. The guided tour can read itself aloud
-using your phone's built-in text-to-speech; the text spoken is the text on screen, and the app does not
-send it anywhere. Depending on your phone's settings, your device's speech engine may itself process
-text; that is governed by your phone manufacturer's and speech engine's own privacy policy.</p>
-
-<h2>Crash reports and analytics</h2>
-<p>The app uses Firebase Crashlytics and Analytics to understand crashes and general usage (for example,
-how many sessions are completed), so we can fix problems and improve the app. These reports are
-aggregated and are not tied to your name or identity. They never include the contents of your sessions,
-your challenge answers, your contacts, your browsing, or camera data.</p>
-
-<h2>Permissions, and why each is asked for</h2>
-<p>The app asks for powerful permissions, and each one is used only for the purpose below. A session
-runs without any of them; each only widens what a session can enforce.</p>
-<div class="tbl-wrap">
-<table>
-  <tr><th>Permission</th><th>Used for</th></tr>
-  <tr><td>Accessibility Service (the app lock)</td><td>Optional, and turned on by you. Blocking apps, blocking websites, YouTube Study Mode, and counting short videos. Not used to assist users with disabilities. See the section above for exactly what it reads.</td></tr>
-  <tr><td>Usage access</td><td>Two things: an alternative way to notice which app is in front so a blocked one can be covered, and per-app screen-time figures from Android's own records.</td></tr>
-  <tr><td>Display over other apps</td><td>To draw the block screen over an app, site or video you chose to block.</td></tr>
-  <tr><td>Do Not Disturb access</td><td>To silence interruptions for the length of a session and then restore your previous setting. Alarms and repeat callers always get through.</td></tr>
-  <tr><td>Camera</td><td>To count exercise repetitions on the device during an exercise challenge. Frames are processed in memory and immediately discarded — never saved to storage and never uploaded.</td></tr>
-  <tr><td>Phone (make calls)</td><td>To dial a saved emergency contact in one tap from the emergency screen. Public emergency numbers open your dialer rather than being dialled for you.</td></tr>
-  <tr><td>Notifications</td><td>To show the running session and the time left, with emergency access one tap away.</td></tr>
-  <tr><td>Run foreground service / start on boot</td><td>To keep a session's timer accurate and restore an unfinished session after a restart.</td></tr>
-</table>
-</div>
-
-<h2>What this app never does</h2>
-<ul class="never">
-  <li>Read your messages, your passwords, or the contents of your notifications.</li>
-  <li>Record or upload anything the camera or microphone could capture.</li>
-  <li>Track your location.</li>
-  <li>Keep or transmit your browsing history.</li>
-  <li>Sell or share your data with advertisers or data brokers.</li>
-  <li>Stop you removing the app, except during a session you started with uninstall protection
-  switched on — and never in a way you cannot undo.</li>
-</ul>
-
-<h2>Keeping and deleting your data</h2>
-<p>Data on your device is removed when you uninstall the app or clear its storage. Backed-up data is
-kept in your account so your history can be restored. To have your backed-up data and any published
-profile deleted, contact us at <strong>monkeymariners@gmail.com</strong> and we will remove it. You can delete
-your published profile yourself at any time from the Friends screen.</p>
-
-<h2>Children</h2>
-<p>REATTAIN is not directed to children under 13, and we do not knowingly collect personal information
-from them.</p>
-
-<h2>Changes to this policy</h2>
-<p>If this policy changes, we will update the date at the top and, for significant changes, note it in
-the app. Continued use after a change means you accept the updated policy.</p>
-
-<h2>Contact</h2>
-<p>Questions or requests about your privacy: <strong>monkeymariners@gmail.com</strong>.</p>
-
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="What the app accesses, what leaves your phone, and the choices you have.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; font-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin"><title>Privacy Policy | REATTAIN</title>
+<link rel="icon" type="image/png" href="favicon.png"><link rel="stylesheet" href="style.css"></head>
+<body><a class="skip" href="#main">Skip to content</a><div class="bg-accents" aria-hidden="true"></div>
+<header class="hero"><a class="brand" href="legal.html"><span class="dot" aria-hidden="true"></span> REATTAIN</a>
+<nav class="top-nav" aria-label="Main navigation"><a href="home.html">App overview</a><a href="legal.html">Legal centre</a><a href="delete-account.html">Request deletion</a><a href="contact.html">Contact</a></nav>
+<p class="eyebrow">Legal / Your privacy</p><h1>Privacy Policy</h1><p class="lede">What the app accesses, what leaves your phone, and the choices you have.</p>
+<p class="updated">Version 2026-10-23 · Updated 23 October 2026</p></header>
+<main id="main" class="doc"><nav class="toc" aria-label="On this page"><h2>On this page</h2><ol><li><a href="#publisher">1. Who is responsible</a></li><li><a href="#scope">2. Scope and age eligibility</a></li><li><a href="#data">3. Information and purposes</a></li><li><a href="#accessibility">4. Accessibility Service and sensitive permissions</a></li><li><a href="#backup">5. Optional cloud backup and Android backup</a></li><li><a href="#social">6. Friends and focus rooms</a></li><li><a href="#diagnostics">7. Analytics, advertising and other connections</a></li><li><a href="#bases">8. Reasons for processing and lawful bases</a></li><li><a href="#recipients">9. Recipients, locations and security</a></li><li><a href="#rights">10. Your privacy rights and regional information</a></li><li><a href="#changes">11. Updates</a></li></ol></nav>
+<div class="box"><p><strong>Your choices, at a glance.</strong> Core focus tools work without an account. Cloud history backup is off until you enable it in Settings. Analytics and automatic crash-report uploads are disabled in this release. Ages 13–17 use local tools only; online features require age 18+. The Android operating system may separately back up app data under your device backup settings.</p></div>
+<h2 id="publisher">1. Who is responsible</h2>
+<p>REATTAIN is published by <strong>Praduman Kumar, operating as MonkeyMariners</strong> (also displayed as Monkey Mariners). We are responsible for personal information processed for our app and support service. Privacy and grievance contact: <a href="mailto:monkeymariners@gmail.com">monkeymariners@gmail.com</a>. Postal address: Vill. Sukar Beg Chak, P.O. &amp; P.S. Khusrupur, Patna, Bihar 803202, India. See <a href="contact.html">Contact, Support &amp; Grievances</a>.</p>
+<h2 id="scope">2. Scope and age eligibility</h2>
+<p>This notice covers REATTAIN for Android and these public policy pages. It does not govern another app, your Google account, your mobile operator, or your device backup service. REATTAIN is for people aged 13 and over. The app asks for an age band, stores it locally, and does not request a birth date or identity document. This is self-declaration, not age verification or verified parental consent. In this release, sign-in, cloud backup, and social features are restricted to self-declared adults aged 18+. See the <a href="children-privacy.html">Children’s Privacy &amp; Parent Notice</a>.</p>
+<h2 id="data">3. Information and purposes</h2>
+<div class="tbl-wrap" role="region" aria-label="Information processed" tabindex="0"><table><thead><tr><th>Information</th><th>Purpose and location</th></tr></thead><tbody>
+<tr><td>Focus sessions, purpose, goal text, timing, app blocklists, profiles, routines, challenge attempts and answers, exercise counts, daily totals, streaks and XP</td><td>Run focus tools and show progress. Stored in the app’s local database. Only the limited fields described under cloud backup are uploaded by that feature.</td></tr>
+<tr><td>Blocked website hosts, allowed YouTube channels, per-app reel counts, app usage figures and permission settings</td><td>Provide blocking, counting and screen-time features on your phone. Usage figures are read from Android when needed. Screen observations are not sent to our servers.</td></tr>
+<tr><td>Emergency contacts you enter, a chosen local profile photo, avatar and display-name preferences</td><td>Personalize the app and offer calling shortcuts. Local photos and saved contact details are not included in the app’s Firebase history backup. A call passes the selected number to your phone’s calling service.</td></tr>
+<tr><td>Google account name, email, profile-image URL, authentication tokens and Firebase user ID</td><td>If an eligible adult chooses Google sign-in, authenticate the account. Loading a Google profile image makes a request to Google. Enabling backup without Google sign-in can create an anonymous Firebase account identifier.</td></tr>
+<tr><td>Messages you send to support, contact details, relevant account identifiers and purchase references</td><td>Answer questions, handle privacy requests, investigate problems and resolve disputes. Processed through our email service and relevant service providers.</td></tr>
+<tr><td>IP address, request time, device/browser or connection information and service-security logs</td><td>Deliver public pages and requested online services and protect them. Hosting, authentication and cloud providers may process this technical information; disabled analytics does not eliminate ordinary network requests.</td></tr>
+</tbody></table></div>
+<h2 id="accessibility">4. Accessibility Service and sensitive permissions</h2>
+<p><strong>The optional Android Accessibility Service is used for focus tools, not to assist users with disabilities.</strong> Before opening the permission settings, the app explains the access and asks you to continue or decline. You can revoke access in Android Settings at any time.</p>
+<ul><li>It observes the foreground app’s package name and feed-scroll events to block selected apps and count short videos.</li>
+<li>On supported short-video screens, it can briefly read visible creator/caption text to form an in-memory fingerprint that distinguishes one video from another. Screen text and fingerprints are not uploaded as history.</li>
+<li>For website blocking, it reads a supported browser’s address field and extracts the host for comparison with blocking rules. Other URL components can be present transiently while that host is extracted; they are not kept as browsing history.</li>
+<li>For YouTube Study Mode, it compares the visible channel name with your chosen allowlist. The allowlist is saved locally.</li></ul>
+<p>The service is not designed to collect passwords, private messages, notification contents, files or arbitrary screen content. Diagnostic device logs can contain app package identifiers, timing and error information. Do not interpret local processing as a promise that the operating system creates no logs.</p>
+<p>Usage access supplies foreground-app and screen-time information. Overlay access draws block screens. Do Not Disturb access manages session interruptions. Camera access is used for on-device exercise pose processing and the flashlight; exercise frames are not recorded or uploaded. The app does not request microphone or location access. Call permission supports calls to saved contacts; public emergency numbers open the dialer. Notifications, a foreground service, boot recovery and optional battery-exemption access support the running timer and reminders. Denying an optional permission limits its feature, and does not require accepting analytics or cloud backup.</p>
+<h2 id="backup">5. Optional cloud backup and Android backup</h2>
+<p><strong>App cloud backup is off by default, including for existing installs with no recorded choice.</strong> An eligible adult can enable it in Settings. Google sign-in and backup are separate choices. If enabled without Google sign-in, Firebase Anonymous Authentication can create a random account ID. Anonymous credentials can be lost when storage is cleared; contact us before doing that if you need help identifying cloud data.</p>
+<p>Firebase history backup includes session identifiers, purpose, start/end times, planned and focused duration, completion status, discipline and challenge settings, the number of blocked apps, block/emergency/tamper event counts, challenge scores and outcomes, exercise type and repetition totals, daily activity totals, XP and streak information. It does <strong>not</strong> include goal text, app blocklists, blocked website lists, channel allowlists, per-app reel counts, reading passages, question answers, exercise frames, local profile photos or emergency contact details.</p>
+<p>Turning backup off stops new app backup/restore requests; an operation already transmitted can finish. It does not erase an existing cloud copy. Use <a href="delete-account.html">Request Account &amp; Data Deletion</a> for that. Ordinary sign-out is not deletion.</p>
+<p><strong>Android system backup is separate.</strong> The current Android backup rules allow eligible app databases, preferences and files to participate in Google/device backup and device-to-device transfer. That can include information excluded from our limited Firebase history backup. Your Android settings, device manufacturer and backup provider control that service. Uninstalling alone does not necessarily erase previously backed-up copies or stop restoration. See <a href="data-retention.html#device-backups">retention and device backups</a>.</p>
+<h2 id="social">6. Friends and focus rooms</h2>
+<p><strong>Friends and focus rooms are disabled in this release.</strong> The following explains records that can exist from another version, and the intended processing if social tools are offered after the necessary safeguards are in place. Publishing a social profile sends a user ID, display name, preset avatar ID, today’s total reel count, streak and update time to Firestore. Friend links contain participating user IDs. Room records include the room name, host, members and focus progress.</p>
+<p><strong>Published profiles and room/member records are readable by authenticated users under the current service rules; they are not guaranteed to be visible only to friends or current room members.</strong> Do not publish confidential information. The app does not offer private messaging. Removing a profile does not automatically remove friendships, hosted rooms, room membership records or screenshots another user has made. Request a full cleanup through our deletion contact. A room disappearing from the UI is not proof that its server record was erased. See <a href="community-guidelines.html">Community Guidelines</a>.</p>
+<h2 id="diagnostics">7. Analytics, advertising and other connections</h2>
+<p>Firebase Analytics and Crashlytics libraries are included, but automatic analytics collection and crash-report uploads are disabled in this release. There is no analytics opt-in switch yet. We do not claim that SDK-generated records would be anonymous if reporting were enabled in a future version: such records can include identifiers and technical data.</p>
+<p>There is no advertising SDK or personalized advertising in the current app. We do not sell personal information or share it for cross-context behavioral advertising. Our own site pages contain no analytics, advertising scripts, tracking pixels or remotely loaded fonts. Hosting providers still process normal web requests.</p>
+<p>Eligible adult installs may fetch updated detection rules from Firebase. Those requests are separate from cloud history backup. Device text-to-speech and emergency calling use system services; the device speech engine may have its own online processing. External legal links open a browser; optional translated links use Google Translate, whose requests are governed by Google’s policies. You may open the original English URLs directly from the legal centre.</p>
+<h2 id="bases">8. Reasons for processing and lawful bases</h2>
+<p>We process data only for the purposes described here. Where GDPR or UK GDPR applies, the following bases are intended to apply to the relevant activity; an Android permission is not a substitute for any legal consent that is required.</p>
+<div class="tbl-wrap" role="region" aria-label="Processing purposes and legal bases" tabindex="0"><table><thead><tr><th>Activity</th><th>Basis where applicable</th></tr></thead><tbody>
+<tr><td>Provide the local tools, adult account or service you request</td><td>Performance of a contract, for processing objectively necessary to that service.</td></tr>
+<tr><td>Optional cloud backup and optional publication of social information</td><td>Consent for the optional processing. Withdraw by disabling backup or removing published information; request deletion for records already held.</td></tr>
+<tr><td>Security, abuse handling and ordinary hosting/service diagnostics</td><td>Legitimate interests in a secure, reliable service, subject to balancing your interests and rights. You may object.</td></tr>
+<tr><td>Statutory records, lawful requests and mandatory consumer/privacy handling</td><td>Compliance with applicable legal obligations.</td></tr>
+<tr><td>Respond to support and disputes</td><td>Contract where necessary to help with your service, legitimate interests for ordinary correspondence/claims, or legal obligations as applicable.</td></tr>
+</tbody></table></div>
+<p>If processing needs additional consent or safeguards under a local law, it must not start until those conditions are met. We do not use focus scores or local challenge validation to make solely automated decisions with legal or similarly significant effects.</p>
+<h2 id="recipients">9. Recipients, locations and security</h2>
+<p>Google/Firebase supplies authentication and cloud storage; Google Play supplies any future store billing; GitHub Pages hosts these static documents; email providers handle correspondence. Social data is disclosed to other users as described above. We may disclose information where legally required, to address security/abuse, or in a business transfer with legally required safeguards and notice.</p>
+<p>We operate from India. Providers may process information in other countries, depending on service and project settings. We do not promise that all data stays in India, the EU, or your country. Where cross-border transfer restrictions apply, an appropriate legal mechanism and provider terms are required. Contact our privacy contact for the processing locations and transfer safeguards applicable to your data.</p>
+<p>We use app-private storage, provider access controls and encrypted network transport supported by the services. Cloud backup is not represented as end-to-end encrypted; authorized service administrators and providers can have access. No system is guaranteed secure. A lost unlocked device, shared account or system backup can expose data. Security incidents are assessed and notified as applicable law requires.</p>
+<h2 id="rights">10. Your privacy rights and regional information</h2>
+<p>Use <a href="contact.html#privacy">our privacy contact</a> to request access, correction, deletion, a copy of your data, consent withdrawal or information about processing. We ask only for proportionate information needed to verify a request; never send a password, sign-in token or unnecessary identity document. We do not penalize you for exercising a privacy right. Some rights have legal conditions and exceptions.</p>
+<ul><li><strong>India:</strong> applicable Indian privacy, IT and consumer requirements apply. The DPDP Act 2023 and Rules 2025 have phased commencement; we do not describe all provisions as already effective. As relevant provisions apply, requests can include access information, correction/completion, erasure, grievance redressal and nomination. Contact Praduman Kumar first for a grievance; this does not remove a right to approach a competent authority when available.</li>
+<li><strong>EU/EEA and UK:</strong> you may also have rights to restriction, portability, objection, withdrawal of consent, and complaint to your local supervisory authority, including the UK ICO. We respond within one calendar month where required, and explain any lawful extension within that period. Consent withdrawal does not invalidate earlier lawful processing.</li>
+<li><strong>United States:</strong> state-law rights can include access/knowledge, correction, deletion, portability, an authorized-agent request, and appeal where applicable. There is no sale, cross-context advertising sharing or targeted advertising to opt out of in this release. No such processing is initiated when a Global Privacy Control signal is present. We honor applicable opt-out rights if our practices change.</li>
+<li><strong>Brazil, Canada and other countries:</strong> where applicable, request confirmation/access, correction, deletion, consent withdrawal and information about sharing, and use local complaint channels. Local mandatory rights prevail over these terms.</li></ul>
+<p>We aim to acknowledge requests within 48 hours and resolve them within 30 days, or sooner where required. A calendar-month legal deadline takes precedence over a 30-day operational target. If we need more time or retain information under an exception, we explain the reason, applicable deadline and available review route. See <a href="data-retention.html">Data Retention &amp; Deletion</a>.</p>
+<h2 id="changes">11. Updates</h2>
+<p>We update the version and date when this notice changes. Material changes to processing will be brought to users’ attention before that processing starts, and fresh consent will be requested where needed. Continuing to use the app is not treated as consent to a new optional processing purpose.</p>
 </main>
-
-<nav class="doc-nav" aria-label="Legal pages">
-  <a href="home.html">Home</a>
-  <a href="privacy-policy.html" class="active">Privacy</a>
-  <a href="terms-of-use.html">Terms of Use</a>
-  <a href="refund-policy.html">Refund</a>
-  <a href="cookie-policy.html">Cookies</a>
-</nav>
-
-<footer class="foot">
-  <div class="power">Powered by <strong>Monkey Mariners</strong></div>
-  <div>© 2026 REATTAIN · Patna, India · <a href="mailto:monkeymariners@gmail.com">monkeymariners@gmail.com</a></div>
-</footer>
-</body>
-</html>
+<nav class="doc-nav" aria-label="Related legal pages"><a href="legal.html">All legal documents</a><a href="privacy-policy.html" aria-current="page">Privacy</a><a href="terms-of-use.html">Terms &amp; EULA</a><a href="delete-account.html">Account &amp; data deletion</a><a href="contact.html">Support &amp; grievances</a></nav>
+<footer class="foot"><p>© 2026 REATTAIN · Praduman Kumar, operating as MonkeyMariners</p><p><a href="mailto:monkeymariners@gmail.com">monkeymariners@gmail.com</a> · Patna, India</p><p>Mandatory local rights prevail. English source documents; automated translations can contain errors.</p></footer></body></html>
